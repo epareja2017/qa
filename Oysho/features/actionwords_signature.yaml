@@ -1,0 +1,32 @@
+---
+- name: the user opens "website"
+  uid: 856ac10d-0d38-48d3-8984-45537842f16d
+  parameters:
+  - name: website
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the user searches for "word"
+  uid: 1bb855b7-446e-4c77-b8e9-76b714e9a5fc
+  parameters:
+  - name: word
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: the title should be "title"
+  uid: 98c87a3f-1117-4d28-bf42-9bb12b71d477
+  parameters:
+  - name: title
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: a user that wants to register on "website"
+  uid: 78da8f90-3a56-4077-97df-d71ec16f6b15
+  parameters:
+  - name: website
+  body_hash: 2c312758762e45ce2f3c83a86f0604d2
+- name: 'the user credentials are introduced '
+  uid: 7e04cab2-c492-46ba-a57c-917b1baf4876
+  parameters:
+  - name: userMail
+  - name: birthDate
+  - name: password
+  body_hash: f175c7dd3038eb26e0634bce589b15c7
+- name: the user is registered
+  uid: 6dc0bb31-6225-4e97-8a83-c3d98d65d8cd
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e

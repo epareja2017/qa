@@ -1,0 +1,31 @@
+<testsuite errors="0" failures="0" name="proyecto_oysho.Proyecto Oysho" skipped="0" tests="2" time="12.939707"><testcase classname="proyecto_oysho.Proyecto Oysho" name="Visit Home Page (uid:bf1b12b2-4c61-4c76-a3c4-3072450680ed)" status="passed" time="7.762404"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Sprint1
+  Scenario: Visit Home Page (uid:bf1b12b2-4c61-4c76-a3c4-3072450680ed)
+    Given the user opens "http://google.es" ... passed in 1.139s
+    When the user searches for "Oysho" ... passed in 6.617s
+    Then the title should be "Oysho" ... passed in 0.006s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Tendencias Primavera Verano 2017 en moda de mujer | Oysho
+
+]]>
+</system-out></testcase><testcase classname="proyecto_oysho.Proyecto Oysho" name="Sign In Workflow (uid:18abb8b6-781d-4ab8-a5a9-ff24762674ea) -- @1.1 " status="passed" time="5.177303"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Sprint1
+  Scenario Outline: Sign In Workflow (uid:18abb8b6-781d-4ab8-a5a9-ff24762674ea) -- @1.1 
+    Given a user that wants to register on "http://www.oysho.es" ... passed in 2.622s
+    When the user credentials are introduced  "newuser@gmail.com" "10/02/2001" "Hola1234" ... passed in 2.523s
+    Then the user is registered ... passed in 0.032s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

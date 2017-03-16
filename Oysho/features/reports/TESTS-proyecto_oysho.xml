@@ -1,0 +1,57 @@
+<testsuite errors="1" failures="0" name="proyecto_oysho.Proyecto Oysho" skipped="0" tests="2" time="9.2277"><testcase classname="proyecto_oysho.Proyecto Oysho" name="Visit Home Page (uid:bf1b12b2-4c61-4c76-a3c4-3072450680ed)" status="passed" time="7.60719"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Sprint1
+  Scenario: Visit Home Page (uid:bf1b12b2-4c61-4c76-a3c4-3072450680ed)
+    Given the user opens "http://google.es" ... passed in 0.738s
+    When the user searches for "Oysho" ... passed in 6.865s
+    Then the title should be "Oysho" ... passed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Tendencias Primavera Verano 2017 en moda de mujer | Oysho
+
+]]>
+</system-out></testcase><testcase classname="proyecto_oysho.Proyecto Oysho" name="Sign In Workflow (uid:18abb8b6-781d-4ab8-a5a9-ff24762674ea) -- @1.1 " status="failed" time="1.62051"><error message="Message: unknown error: Element &lt;a id=&quot;closed_cookies&quot; class=&quot;closed&quot; href=&quot;#&quot;&gt;...." type="WebDriverException">
+<![CDATA[
+Failing step: Given a user that wants to register on "http://www.oysho.es" ... failed in 1.621s
+Location: proyecto_oysho.feature:12
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/behave/model.py", line 1456, in run
+    match.run(runner.context)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/behave/model.py", line 1903, in run
+    self.func(context, *args, **kwargs)
+  File "steps/steps.py", line 29, in impl
+    context.actionwords.a_user_that_wants_to_register_on_website(website)
+  File "/Users/epareja/Documents/Oysho/features/steps/actionwords.py", line 49, in a_user_that_wants_to_register_on_website
+    self.browser.find_element_by_id('closed_cookies').click()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 77, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 494, in _execute
+    return self._parent.execute(command, params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 236, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 192, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <a id="closed_cookies" class="closed" href="#">...</a> is not clickable at point (1008, 631). Other element would receive the click: <div class="main-pagination hidden-xs swiper-pagination-clickable">...</div>
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Mac OS X 10.12.3 x86_64)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Sprint1
+  Scenario Outline: Sign In Workflow (uid:18abb8b6-781d-4ab8-a5a9-ff24762674ea) -- @1.1 
+    Given a user that wants to register on "http://www.oysho.es" ... failed in 1.621s
+    When the user credentials are introduced  "newuser@gmail.com" "10/02/2001" "Hola1234" ... skipped in 0.000s
+    Then the user is registered ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
